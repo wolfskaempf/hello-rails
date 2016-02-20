@@ -1,14 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Blog</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>blog of truth</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <link href='https://fonts.googleapis.com/css?family=Vollkorn' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300' rel='stylesheet' type='text/css'>
 </head>
 <body>
+  <header>
+    <h1 class="website-title">blog of truth</h1>
+  </header>
 
-<%= yield %>
+  <div class="main-yield">
+    <%= yield %>
+  </div>
 
 </body>
 </html>
