@@ -1,15 +1,25 @@
 body {
   background-color: #fff;
   color: #333;
-  font-family: verdana, arial, helvetica, sans-serif;
+  font-family: 'Open Sans', arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px;
+  padding: 10px 10px 20px 40%;
+
+  header {
+    padding-bottom: 50px;
+  }
 }
 
-p, ol, ul, td {
-  font-family: verdana, arial, helvetica, sans-serif;
-  font-size: 13px;
-  line-height: 18px;
+p, ol, ul, td, th {
+  font-family: Vollkorn, arial, helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 30px;
+}
+
+h1 {
+  font-size: 30px;
+  font-weight: 300;
 }
 
 pre {
@@ -19,15 +29,13 @@ pre {
 }
 
 a {
-  color: #000;
-
-  &:visited {
-    color: #666;
-  }
+  color: #d1d1d1;
+  text-decoration: none;
+  transition-duration: 300ms;
 
   &:hover {
-    color: #fff;
-    background-color: #000;
+    color: #666;
+    transition-duration: 300ms;
   }
 }
 
@@ -36,6 +44,15 @@ div {
     margin-bottom: 10px;
   }
 }
+
+
+
+.website-title {
+  font-size: 50px;
+  line-height: 50*1.2px;
+  font-family: 'Vollkorn', serif
+}
+
 
 #notice {
   color: green;
