@@ -1,19 +1,14 @@
 <p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Body:</strong>
-  <%= @article.body %>
-</p>
-
-<p>
-  <strong>Title:</strong>
-  <%= @article.title %>
-</p>
-
-<p>
-  <strong>Published:</strong>
-  <%= @article.published %>
-</p>
-
-<%= link_to 'Edit', edit_article_path(@article) %> |
-<%= link_to 'Back', articles_path %>
+<article>
+  <h1 class="article-title"><%= @article.title %></h1>
+  <p>
+    <%= sanitize @article.body %>
+  </p>
+  <div class="article-links">
+    <%= link_to 'Back', articles_path %>
+    <%= link_to 'Edit', edit_article_path(@article) %>
+    <%= link_to 'Destroy', @article, method: :delete, data: { confirm: 'Are you sure?' }, remote: true %>
+    <%= link_to 'New Article', new_article_path %>
+  </div>
+</article>
