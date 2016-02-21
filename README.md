@@ -2,7 +2,7 @@
 
 This is a sample blog application built with rails.
 
-![screenshot of the articles index](http://i.imgur.com/LQTCyGJ.png)
+![screenshot of the article](http://i.imgur.com/LQTCyGJ.png)
 
 ### What is this?
 This project might get updated from time to time as I learn more about rails.
