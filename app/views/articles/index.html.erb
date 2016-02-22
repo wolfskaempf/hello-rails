@@ -15,7 +15,11 @@
       </article>
     <% end %>
     <div class="link-bar">
-      <a href="#">Login</a>
-      <%= link_to 'Signup', 'signup' %>
+      <% if current_user %>
+        <%= link_to 'Logout', 'logout' %>
+      <% else %>
+        <%= link_to 'Login', 'login' %>
+        <%= link_to 'Signup', 'signup' %>
+      <% end %>
     </div>
 <br>
