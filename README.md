@@ -1,4 +1,4 @@
-# hello-rails
+# hello-rails [![Code Climate](https://codeclimate.com/github/wolfskaempf/hello-rails/badges/gpa.svg)](https://codeclimate.com/github/wolfskaempf/hello-rails)
 
 This is a sample blog application built with rails.
 
