@@ -5,7 +5,7 @@
   <p>
     <%= sanitize @article.body %>
   </p>
-  <div class="article-links">
+  <div class="link-bar">
     <%= link_to 'Back', articles_path %>
     <%= link_to 'Edit', edit_article_path(@article) %>
     <%= link_to 'Destroy', @article, method: :delete, data: { confirm: 'Are you sure?' }, remote: true %>

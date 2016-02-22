@@ -6,7 +6,7 @@
         <p>
           <%= sanitize article.body %>
         </p>
-        <div class="article-links">
+        <div class="link-bar">
           <%= link_to 'Show', article %>
           <%= link_to 'Edit', edit_article_path(article) %>
           <%= link_to 'Destroy', article, method: :delete, data: { confirm: 'Are you sure?' }, remote: true %>
@@ -14,4 +14,8 @@
         </div>
       </article>
     <% end %>
+    <div class="link-bar">
+      <a href="#">Login</a>
+      <%= link_to 'Signup', 'signup' %>
+    </div>
 <br>
