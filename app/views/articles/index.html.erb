@@ -16,7 +16,7 @@
     <% end %>
     <div class="link-bar">
       <% if current_user %>
-        <%= link_to 'Logout', 'logout' %>
+        <%= link_to 'Logout', 'logout', method: 'delete' %>
       <% else %>
         <%= link_to 'Login', 'login' %>
         <%= link_to 'Signup', 'signup' %>
