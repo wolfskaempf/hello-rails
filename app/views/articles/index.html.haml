@@ -1,0 +1,18 @@
+%p#notice= notice
+- @articles.each do |article|
+  %article
+    %h1.article-title= article.title
+    %p= sanitize article.body
+    .link-bar
+      = link_to 'Show', article
+      - if current_user && current_user.author?
+        = link_to 'Edit', edit_article_path(article)
+        = link_to 'Destroy', article, method: :delete, data: { confirm: 'Are you sure?' }, remote: true
+.link-bar
+  - if current_user
+    = link_to 'Logout', 'logout', method: 'delete'
+    = link_to 'New Article', new_article_path
+  - else
+    = link_to 'Login', 'login'
+    = link_to 'Signup', 'signup'
+%br
