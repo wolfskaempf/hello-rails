@@ -40,6 +40,7 @@ group :development, :test do
 
   gem 'factory_girl_rails'
 
+  gem 'faker', '~> 1.6', '>= 1.6.3'
 
 end
 
